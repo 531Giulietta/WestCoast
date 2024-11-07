@@ -14,6 +14,17 @@ package frc.robot;
  */
 public final class Constants {
   public static class OperatorConstants {
-    public static final int kDriverControllerPort = 0;
+    public static final int baseJoystick_ID = 0;
+  }
+  public static class WestCoastConstants {
+    public static final int rightForwardModule_ID = 4;
+    public static final int rightBackModule_ID = 8;
+    public static final int leftForwardModule_ID = 2;
+    public static final int leftBackModule_ID = 3;
+
+    public static final boolean rightForwardModuleReverse = true;
+    public static final boolean rightBackModuleReverse = true;
+    public static final boolean leftForwardModuleReverse = true;
+    public static final boolean leftBackModuleReverse = true;
   }
 }

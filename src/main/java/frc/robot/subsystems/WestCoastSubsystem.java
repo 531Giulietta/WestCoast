@@ -6,6 +6,7 @@ package frc.robot.subsystems;
 
 import edu.wpi.first.wpilibj.drive.DifferentialDrive;
 import edu.wpi.first.wpilibj2.command.SubsystemBase;
+import frc.robot.Constants.WestCoastConstants;
 
 public class WestCoastSubsystem extends SubsystemBase {
   /** Creates a new WestCoastSubsystem. */
@@ -14,11 +15,10 @@ public class WestCoastSubsystem extends SubsystemBase {
 
   private final DifferentialDrive drive;
   
-
   public WestCoastSubsystem() {
-    rightWestCoastModule = new WestCoastModule(WestCoastConstants.forwardModule_ID, WestCoastConstants.backModule_ID, WestCoastConstants.forwardModuleReverse, WestCoastConstants.backModuleReverse);
-    leftWestCoastModule = new WestCoastmodule(WestCoastConstants.forwardModule_ID, WestCoastConstants.backModule_ID, WestCoastConstants.forwardModuleReverse, WestCoastConstants.backModuleReverse);
-    drive = new DifferentialDrive(leftWestCoastModule.getforwardMotor(), rightWestCoastModule.getforwardMotor());
+    rightWestCoastModule = new WestCoastModule(WestCoastConstants.rightForwardModule_ID, WestCoastConstants.rightBackModule_ID, WestCoastConstants.rightForwardModuleReverse, WestCoastConstants.rightBackModuleReverse);
+    leftWestCoastModule = new WestCoastModule(WestCoastConstants.leftForwardModule_ID, WestCoastConstants.leftBackModule_ID, WestCoastConstants.leftForwardModuleReverse, WestCoastConstants.leftBackModuleReverse);
+    drive = new DifferentialDrive(leftWestCoastModule.getForwardMotor(), rightWestCoastModule.getForwardMotor());
   }
 
   public void manualDrive(double move, double turn){

@@ -14,7 +14,7 @@ public class WestCoastModule extends SubsystemBase {
   private final WPI_VictorSPX forwardMotor;
   private final WPI_VictorSPX backMotor;
 
-  public WestCoastModule(int forwardMotor_ID, int backMotor_ID, boolean forwardMotorReverse, boolean backMotorReserve) {
+  public WestCoastModule(int forwardMotor_ID, int backMotor_ID, boolean forwardMotorReverse, boolean backMotorReverse) {
     forwardMotor = new WPI_VictorSPX(forwardMotor_ID);
     backMotor = new WPI_VictorSPX(backMotor_ID);
 
